@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            
+            <p:message id="msg" showDetail="true"></p:message>
+            <p:panelGrid columns="2">
+                <h:outputLabel value="Category Name"></h:outputLabel>
+                <p:selectOneMenu value="">
+                    <f:selectItems value=""
+                        
+                   
+                </p:selectOneMenu>
+                <p:inputText value="#{catagoryMB.catagory.catName}"></p:inputText>
+                <h:outputLabel value="Category Description"></h:outputLabel>
+                <p:inputText value="#{catagoryMB.catagory.catDesc}"></p:inputText>
+                <p:commandButton action="#{catagoryMB.addCatagory()}" value="Save" update="msg"></p:commandButton>
+
+            </p:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
