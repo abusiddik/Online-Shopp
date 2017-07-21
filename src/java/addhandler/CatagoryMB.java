@@ -20,7 +20,7 @@ import javax.faces.view.facelets.FaceletContext;
 @ManagedBean
 @SessionScoped
 public class CatagoryMB {
-
+String so;
     Catagory catagory = new Catagory();
 
     public Catagory getCatagory() {
